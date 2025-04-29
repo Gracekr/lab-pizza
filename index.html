@@ -1,0 +1,157 @@
+<!-- nstructions
+TIENDA CON OPCIONES DE COMPRA
+
+Crea una página de pedidos para una tienda, con diferentes opciones de compra,como por ejemplo, un pizzería, 
+que incluya menús desplegables, y casillas seleccionables cuadradas y redondas:
+
+Desplegable: Sr/Sra./Otre (+nombre)
+
+Teléfono
+
+Desplegable tipo de pizza (al menos 6)
+
+Checkboxes: ingredientes extras (poner al menos 4)
+
+Radio button: enviar a casa / venir a buscar
+
+uedes añadir un comentario para el cliente (textarea)
+
+Verificar que se envíe por GET y queden registrados los datos por pares clave-valor
+
+Una vez te funcione, prueba las diferentes opciones para estilizar tu formulario: colores, sombras, 
+bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web para inspirarte! -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="Pizza">Pizzas</a></li>
+            <li><a href="#Pastas">Pastas</a></li>
+            <li><a href="Pizza">Topping</a></li>
+            <li><a href="Pizza">Reservar</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h1>Selecciona tu pedido</h1>
+
+
+
+
+    <form id="Menú" action="/index.html" method="get" name="Menú">
+        <div>
+            <label><input name="delivery" id="delivery" type="radio">A domicilio</label>
+            <label><input name="takeout" id="takeout" type="radio">Recoger</label>
+        </div>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div><select name="treatment" id="treatment" placeholder="Seleccione un tratamiento">
+                    <option selected disabled>-Seleccione un tratamiento-</option>
+                    <option value="1">Sr.</option>
+                    <option value="2">Sra.</option>
+                    <option value="3">Otre</option>
+                </select>
+                <input name="name" id="name" type="text" placeholder="Nombre">
+                <label>
+            </div>
+            <div> <label>
+                    Teléfono <input name="Telf" type="tel" placeholder="+34 123456789">
+                </label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Selecciona tu plato</legend>
+
+
+            <select name="pizza" id="pizza">
+
+                <option selected disabled>-Seleccione un sabor-</option>
+                <option value="1">Margarita</option>
+                <option value="2">4 Quesos</option>
+                <option value="3">Pepperonni</option>
+                <option value="4">Vegetariana</option>
+                <option value="5">Frutos del mar</option>
+                <option value="6">Diavola</option>
+                <option value="7">Fungi</option>
+                </optgroup>
+
+
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Pastas</legend>
+            <select name="Pastas" id="Pastas">
+                <option selected disabled>-Seleccione un sabor-</option>
+                <option value="1">Margarita</option>
+                <option value="2">4 Quesos</option>
+                <option value="3">Pepperonni</option>
+                <option value="4">Vegetariana</option>
+                <option value="5">Frutos del mar</option>
+                <option value="6">Diavola</option>
+                <option value="7">Fungi</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ensaladas</legend>
+            <select name="Ensaladas" id="Pastas">
+                <option selected disabled>-Seleccione un sabor-</option>
+                <option selected disabled>-Seleccione un sabor-</option>
+                <option value="1">Margarita</option>
+                <option value="2">4 Quesos</option>
+                <option value="3">Pepperonni</option>
+                <option value="4">Vegetariana</option>
+                <option value="5">Frutos del mar</option>
+                <option value="6">Diavola</option>
+                <option value="7">Fungi</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <p>Ingredientes extra</p>
+            </legend>
+            <div>
+                <label><input name="extra" id="extra" type="checkbox">Cebolla</label>
+            </div>
+
+            <div>
+                <label><input name="extra" id="extra" type="checkbox">Queso parmesano</label>
+            </div>
+            <div>
+                <label><input name="extra" id="extra" type="checkbox">Pepperonni</label>
+            </div>
+            <div>
+                <label><input name="extra" id="extra" type="checkbox">Bacon</label>
+            </div>
+            <div>
+                <label><input name="extra" id="extra" type="checkbox">Champiñones</label>
+            </div>
+            <div>
+                <label> <input name="extra" id="extra" type="checkbox">Carne</label>
+            </div>
+            <div>
+                <textarea maxlength="300" cols="30" name="Comment" id="Comment"
+                    placeholder="¿Tienes alguna petición adicional?">
+</textarea>
+            </div>
+        </fieldset>
+
+
+
+
+        <input type="submit" value="Meter al horno">
+    </form>
+</body>
+
+</html>

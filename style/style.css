@@ -1,0 +1,20 @@
+nav{
+    background-image:url(/img/popular-pasta-dishes-in-italy-891397460.jpg);
+    
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    list-style-type: none;
+    
+}
+nav a{
+    text-decoration: none;
+    color: rgb(213, 233, 209);
+    font-weight: 600;
+    font-size: 50px;
+    
+}
