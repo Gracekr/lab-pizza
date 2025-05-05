@@ -33,10 +33,10 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
 <body>
     <nav>
         <ul>
-            <li><a href="Pizza">Pizzas</a></li>
+            <li><a href="#Pizza">Pizzas</a></li>
             <li><a href="#Pastas">Pastas</a></li>
-            <li><a href="Pizza">Topping</a></li>
-            <li><a href="Pizza">Reservar</a></li>
+            <li><a href="#Ensaladas">Ensaladas</a></li>
+            
         </ul>
     </nav>
     <hr>
@@ -67,9 +67,9 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
             </div>
         </fieldset>
 
-
+<fieldset> <legend>Selecciona tu plato</legend>
         <fieldset>
-            <legend>Selecciona tu plato</legend>
+            <legend>Pizzas</legend>
 
 
             <select name="pizza" id="pizza">
@@ -87,19 +87,22 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
 
 
             </select>
+          <label><input id="howMany" name="howMany" type="number" min="1" >Cantidad</label>
         </fieldset>
         <fieldset>
             <legend>Pastas</legend>
             <select name="Pastas" id="Pastas">
                 <option selected disabled>-Seleccione un sabor-</option>
-                <option value="1">Margarita</option>
+                <option value="1">Carbonara</option>
                 <option value="2">4 Quesos</option>
-                <option value="3">Pepperonni</option>
-                <option value="4">Vegetariana</option>
-                <option value="5">Frutos del mar</option>
-                <option value="6">Diavola</option>
-                <option value="7">Fungi</option>
+                <option value="3">Caccio e Peppe</option>
+                <option value="4">Pesto</option>
+                <option value="5">Cartoccio</option>
+                <option value="6">Alfredo</option>
+                <option value="7">Bolognesa</option>
             </select>
+
+            <label><input id="howMany" name="howMany" type="number" min="1" >Cantidad</label>
         </fieldset>
 
         <fieldset>
@@ -107,16 +110,17 @@ bordes del input, imagen de fondo de la página, etc. Busca ejemplos en la web p
             <select name="Ensaladas" id="Pastas">
                 <option selected disabled>-Seleccione un sabor-</option>
                 <option selected disabled>-Seleccione un sabor-</option>
-                <option value="1">Margarita</option>
+                <option value="1">César</option>
                 <option value="2">4 Quesos</option>
-                <option value="3">Pepperonni</option>
-                <option value="4">Vegetariana</option>
+                <option value="3">Nizarda</option>
+                <option value="4">Vegetales a la parrilla</option>
                 <option value="5">Frutos del mar</option>
-                <option value="6">Diavola</option>
-                <option value="7">Fungi</option>
+                <option value="6">Fungi</option>
+                
             </select>
+            <label><input id="howMany" name="howMany" type="number" min="1" >Cantidad</label>
         </fieldset>
-
+</fieldset>
         <fieldset>
             <legend>
                 <p>Ingredientes extra</p>
